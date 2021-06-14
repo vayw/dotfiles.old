@@ -1,0 +1,5 @@
+!bundle/Vundle.vim
+.netrwhist
+bundle/*
+autoload/plug.vim
+plugged/
