@@ -10,6 +10,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'kpron/vim-yaml-helper'
 Plug 'vayw/vim-logic-toggle'
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'airblade/vim-gitgutter'

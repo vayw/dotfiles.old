@@ -8,7 +8,10 @@ if [ -f "$(which starship)" ]; then
 fi
 
 # Load aliases
-for af in ~/bash.d/aliases/*.als
+for af in ~/.bash.d/aliases/*.als
 do
   . $af
 done
+
+# Load OS specific settings
+. ~/.bash.d/platform/$(uname)
