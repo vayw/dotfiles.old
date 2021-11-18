@@ -1,1 +1,1 @@
-alias gitpp="git pull && git pull"
+alias gitpp="git pull && git push"

@@ -3,3 +3,4 @@
 bundle/*
 autoload/plug.vim
 plugged/
+local.vim

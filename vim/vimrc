@@ -70,3 +70,5 @@ let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
 " Open go doc in vertical window, horizontal, or tab
 au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+
+source $HOME/.vim/local.vim
