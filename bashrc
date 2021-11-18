@@ -1,7 +1,14 @@
+
+
 # Lets check if starship prompt is installed
 which starship 2>/dev/null
 if [[ $? == 0 ]]; then
   eval "$(starship init bash)"
+fi
+
+# will we go?
+if [ -d ~/go/bin ]; then
+  PATH=$PATH:~/go/bin
 fi
 
 # Load aliases
