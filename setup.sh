@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 function get_path()
 {
     if [ "$(dirname ${BASH_SOURCE[0]})" == '.' ]; then
@@ -17,7 +19,7 @@ function get_path()
     DOTFILES=$path
 }
 
-if [ $(uname)=="Darwin" ]; then
+if [ "$(uname)" == "Darwin" ]; then
   ln_opts="-sFh"
 else
   ln_opts="-sn"

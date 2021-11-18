@@ -1,9 +1,6 @@
-if [ -d /opt/homebrew/bin ]; then
-  PATH=$PATH:/opt/homebrew/bin
-fi
-
 # Lets check if starship prompt is installed
-if [ -f "$(which starship)" ]; then
+which starship 2>/dev/null
+if [[ $? == 0 ]]; then
   eval "$(starship init bash)"
 fi
 
@@ -15,3 +12,14 @@ done
 
 # Load OS specific settings
 . ~/.bash.d/platform/$(uname)
+
+# Load functions
+for ff in ~/.bash.d/functions/*.sh
+do
+  . $ff
+done
+
+# Load host custom settings
+if [[ -f "$HOME/.bash.d/local.bash" ]]; then
+  source "$HOME/.bash.d/local.bash"
+fi
