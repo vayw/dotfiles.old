@@ -16,6 +16,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'google/vim-jsonnet'
 call plug#end()
 
 filetype plugin indent on
@@ -38,6 +39,8 @@ set mousehide
 set termencoding=utf-8
 
 set novisualbell
+
+set modifiable
 
 " logic-toogle bind
 noremap <leader>t :call LogicToggle()<CR>
