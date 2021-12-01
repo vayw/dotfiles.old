@@ -1,11 +1,4 @@
 
-
-# Lets check if starship prompt is installed
-which starship 2>/dev/null
-if [[ $? == 0 ]]; then
-  eval "$(starship init bash)"
-fi
-
 # will we go?
 if [ -d ~/go/bin ]; then
   PATH=$PATH:~/go/bin
@@ -30,3 +23,6 @@ done
 if [[ -f "$HOME/.bash.d/local.bash" ]]; then
   source "$HOME/.bash.d/local.bash"
 fi
+
+# Lets run starship prompt if installed
+type -P starship > /dev/null && eval "$(starship init bash)"
