@@ -42,6 +42,8 @@ set novisualbell
 
 set modifiable
 
+nmap <F8> :Tags<CR>
+
 " logic-toogle bind
 noremap <leader>t :call LogicToggle()<CR>
 " call FuzzyFinder
