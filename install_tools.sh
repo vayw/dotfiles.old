@@ -1,3 +1,3 @@
 if [ "$(uname)"=="Darwin" ]; then
-  brew install fzf
+  brew install fzf ripgrep
 fi

@@ -48,6 +48,7 @@ nmap <F8> :Tags<CR>
 noremap <leader>t :call LogicToggle()<CR>
 " call FuzzyFinder
 noremap <C-P> :FZF<CR>
+noremap <C-f> :Rg! 
 
 " bind Space to reset last search highlightning
 nnoremap <Space> :noh<return>
