@@ -7,3 +7,9 @@ fi
 
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
+if [ -d ${HOME}/.local/bash/completions ]; then
+  for file in ${HOME}/.local/bash/completions/*
+  do
+    . $file
+  done
+fi

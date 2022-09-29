@@ -11,7 +11,7 @@ do
 done
 
 # Load OS specific settings
-. ~/.bash.d/platform/$(uname)
+source ${HOME}/.bash.d/platform/$(uname)
 
 # Load functions
 for ff in ~/.bash.d/functions/*.sh
@@ -24,5 +24,5 @@ if [[ -f "$HOME/.bash.d/local.bash" ]]; then
   source "$HOME/.bash.d/local.bash"
 fi
 
-# Lets run starship prompt if installed
-type -P starship > /dev/null && eval "$(starship init bash)"
+# setup prompt
+. ${HOME}/.bash.d/prompt
